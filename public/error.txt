@@ -1,0 +1,1894 @@
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2073
+ Undefined index: command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [command] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [command] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2073
+ Undefined index: command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 100
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 100
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 99
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 91
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 89
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 87
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 87
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 87
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 87
+ Use of undefined constant URI_REVIEWS - assumed 'URI_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 111
+ Undefined variable: buttons
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 104
+ Undefined variable: config
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 195
+ Undefined variable: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 195
+ Undefined variable: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 195
+ Undefined variable: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 193
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 135
+ Undefined variable: prewPage
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 135
+ Undefined variable: prewPage
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 105
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 105
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 143
+ Undefined property: Illuminate\Database\Eloquent\Relations\BelongsToMany::$username
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\BelongsToMany::toArray()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 111
+ Undefined variable: buttons
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [pivot] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php
+ 104
+ Method Illuminate\Database\Eloquent\Collection::pivot does not exist.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method App\models\BotUsers::pivot()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (19, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
+ 50
+ Call to undefined method Illuminate\Database\Eloquent\Relations\Pivot::19()
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 129
+ Trying to get property 'pivot' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (19, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 129
+ Trying to get property 'pivot' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 129
+ Trying to get property 'pivot' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (19, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 129
+ Trying to get property 'pivot' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 129
+ Trying to get property 'pivot' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (19, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 135
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 135
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 135
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 135
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 135
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 137
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 137
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 137
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 137
+ Trying to get property 'count_users' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (8, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (8, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY' (SQL: insert into `khatma_has_users` (`khatma_id`, `users_id`) values (8, 150))
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 264
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 263
+ Non-static method Illuminate\Support\Collection::where() should not be called statically
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 263
+ Non-static method Illuminate\Support\Collection::where() should not be called statically
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 263
+ Non-static method Illuminate\Support\Collection::where() should not be called statically
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 244
+ Trying to get property 'page' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 244
+ Trying to get property 'page' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 244
+ Trying to get property 'page' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 190
+ Trying to get property 'periodicity' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 135
+ Trying to get property 'pages' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 133
+ Trying to get property 'page' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Undefined property: stdClass::$messageId
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 331
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 331
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 331
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 330
+ Undefined property: stdClass::$command
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 328
+ json_decode() expects parameter 1 to be string, array given
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 329
+ Trying to get property 'params' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 118
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 436
+ A non well formed numeric value encountered
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ A non-numeric value encountered
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 156
+ Undefined variable: page
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/InlineButtons.php
+ 158
+ Undefined variable: nextPage
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 455
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 206
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 213
+ Undefined offset: 1
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 213
+ Undefined offset: 1
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php
+ 104
+ Method Illuminate\Database\Eloquent\Collection::delete does not exist.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php
+ 104
+ Method Illuminate\Database\Eloquent\Collection::delete does not exist.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 125
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php
+ 104
+ Method Illuminate\Database\Eloquent\Collection::delete does not exist.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 346
+ Creating default object from empty value
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 346
+ Creating default object from empty value
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 346
+ Creating default object from empty value
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 354
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 354
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 445
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 445
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 445
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [count_users] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Str.php
+ 353
+ Object of class stdClass could not be converted to string
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 344
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 344
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 344
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 344
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 326
+ Trying to get property 'id' of non-object
+
+/sata2/home/users/vitovtov/www/viber.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 126
+ Trying to get property 'messageId' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start' in 'field list' (SQL: update `users` set `start` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start' in 'field list' (SQL: update `users` set `start` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start' in 'field list' (SQL: update `users` set `start` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start' in 'field list' (SQL: update `users` set `start` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start' in 'field list' (SQL: update `users` set `start` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 64
+ Use of undefined constant URL_REVIEWS - assumed 'URL_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 64
+ Use of undefined constant URL_REVIEWS - assumed 'URL_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 64
+ Use of undefined constant URL_REVIEWS - assumed 'URL_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 64
+ Use of undefined constant URL_REVIEWS - assumed 'URL_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 64
+ Use of undefined constant URL_REVIEWS - assumed 'URL_REVIEWS' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/FacebookMessenger.php
+ 394
+ Trying to get property 'messaging' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [id] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/API/Telegram.php
+ 81
+ Undefined property: stdClass::$message
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 196
+ Undefined index: richMedia
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 198
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 411
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 426
+ Undefined index: url
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 426
+ Undefined index: url
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 148
+ copy() expects parameter 3 to be resource, string given
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 426
+ Undefined index: url
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 142
+ Use of undefined constant getDataByType - assumed 'getDataByType' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Undefined variable: heading
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 232
+ A non-numeric value encountered
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Undefined variable: headings
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Undefined variable: headings
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Undefined variable: headings
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Undefined variable: headings
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 151
+ Trying to get property 'name' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Trying to get property 'name' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 150
+ Undefined index: name
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 198
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 198
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 198
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 198
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 106
+ Use of undefined constant COUNT_BUTTONS_PAGE_VIBER - assumed 'COUNT_BUTTONS_PAGE_VIBER' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 106
+ Use of undefined constant COUNT_BUTTONS_PAGE_VIBER - assumed 'COUNT_BUTTONS_PAGE_VIBER' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsViber.php
+ 106
+ Use of undefined constant COUNT_BUTTONS_PAGE_VIBER - assumed 'COUNT_BUTTONS_PAGE_VIBER' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 149
+ Uninitialized string offset: 1
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 149
+ Uninitialized string offset: 1
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 112
+ Use of undefined constant COUNT_BTN_STR_FB - assumed 'COUNT_BTN_STR_FB' (this will throw an Error in a future version of PHP)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 438
+ Undefined index: photo
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 438
+ Undefined index: photo
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 162
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 162
+ Array to string conversion
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 164
+ Undefined index: 
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vitovtov_books.statistics' doesn't exist (SQL: select * from `statistics` limit 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vitovtov_books.statistics' doesn't exist (SQL: select * from `statistics` limit 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vitovtov_books.statistics' doesn't exist (SQL: select * from `statistics` limit 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsTelegram.php
+ 14
+ Trying to get property 'access' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count_download_book' in 'field list' (SQL: update `users` set `count_download_book` = 1 where `id` = 1)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/Traits/Universal.php
+ 471
+ Undefined index: media
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 229
+ Undefined variable: type
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 229
+ Undefined variable: type
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 229
+ Undefined variable: type
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 155
+ A non-numeric value encountered
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 155
+ A non-numeric value encountered
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5' at line 14 (SQL: 
+            SELECT 
+                   b.id AS id, 
+                   b.title AS title,
+                   CONCAT(a.last_name, ' ', a.first_name, ' ', a.middle_name) AS author,
+                   ft.type AS type
+            FROM books b 
+            JOIN authors_has_books ahb ON ahb.books_id = b.id
+            JOIN authors a ON a.id = ahb.authors_id
+            JOIN books_has_file_type bhft ON bhft.books_id = b.id
+            JOIN file_type ft ON ft.id = bhft.file_type_id
+            WHERE b.title LIKE '%соба%'
+            OR a.last_name LIKE '%соба%'
+            OR a.first_name LIKE '%.соба.%'
+            LIMIT 200 OFFSET -5)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5' at line 14 (SQL: 
+            SELECT 
+                   b.id AS id, 
+                   b.title AS title,
+                   CONCAT(a.last_name, ' ', a.first_name, ' ', a.middle_name) AS author,
+                   ft.type AS type
+            FROM books b 
+            JOIN authors_has_books ahb ON ahb.books_id = b.id
+            JOIN authors a ON a.id = ahb.authors_id
+            JOIN books_has_file_type bhft ON bhft.books_id = b.id
+            JOIN file_type ft ON ft.id = bhft.file_type_id
+            WHERE b.title LIKE '%соба%'
+            OR a.last_name LIKE '%соба%'
+            OR a.first_name LIKE '%.соба.%'
+            LIMIT 200 OFFSET -5)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Connection.php
+ 664
+ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5' at line 14 (SQL: 
+            SELECT 
+                   b.id AS id, 
+                   b.title AS title,
+                   CONCAT(a.last_name, ' ', a.first_name, ' ', a.middle_name) AS author,
+                   ft.type AS type
+            FROM books b 
+            JOIN authors_has_books ahb ON ahb.books_id = b.id
+            JOIN authors a ON a.id = ahb.authors_id
+            JOIN books_has_file_type bhft ON bhft.books_id = b.id
+            JOIN file_type ft ON ft.id = bhft.file_type_id
+            WHERE b.title LIKE '%соба%'
+            OR a.last_name LIKE '%соба%'
+            OR a.first_name LIKE '%.соба.%'
+            LIMIT 200 OFFSET -5)
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 120
+ Undefined property: stdClass::$text_search
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 120
+ Undefined property: stdClass::$text_search
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 120
+ Undefined property: stdClass::$text_search
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Undefined property: stdClass::$count
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Undefined property: stdClass::$count
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 153
+ Undefined property: stdClass::$count
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 152
+ Undefined variable: count
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 165
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 168
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 168
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 168
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 168
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 168
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 93
+ ceil() expects exactly 1 parameter, 2 given
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 93
+ ceil() expects exactly 1 parameter, 2 given
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 221
+ Invalid argument supplied for foreach()
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 221
+ Invalid argument supplied for foreach()
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 221
+ Invalid argument supplied for foreach()
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 184
+ Undefined variable: params
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 184
+ Undefined variable: params
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 184
+ Undefined variable: params
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 184
+ Undefined variable: params
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 174
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 176
+ Undefined offset: 0
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/BaseRequestHandler.php
+ 194
+ Undefined index: buttons
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 121
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [last_name] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 273
+ filesize(): stat failed for /sata2/home/users/vitovtov/www/all.vitovtov.info/public/books/280733.djvu
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 287
+ unlink(/sata2/home/users/vitovtov/www/all.vitovtov.info/public/books/9417.fb2): No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 287
+ unlink(/sata2/home/users/vitovtov/www/all.vitovtov.info/public/books/9417.fb2): No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 287
+ unlink(/sata2/home/users/vitovtov/www/all.vitovtov.info/public/books/9417.fb2): No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 55
+ Undefined variable: fileURL
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 294
+ Undefined variable: filePath
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 294
+ Undefined variable: filePath
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 295
+ Undefined variable: filePath
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 295
+ Undefined variable: filePath
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 294
+ Undefined variable: filePath
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 29
+ fopen(/books/9429.fb2): failed to open stream: No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 29
+ fopen(/books/9429.fb2): failed to open stream: No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/FlibustaParser.php
+ 29
+ fopen(/books/9429.fb2): failed to open stream: No such file or directory
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 282
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 285
+ Object of class Illuminate\Routing\UrlGenerator could not be converted to string
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 106
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 106
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 106
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/InlineButtons.php
+ 105
+ Only variables should be passed by reference
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/models/buttons/ButtonsFacebook.php
+ 165
+ Invalid argument supplied for foreach()
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/app/Http/Controllers/Bot/RequestHandler.php
+ 124
+ Trying to get property 'textSearch' of non-object
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [last_name] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [last_name] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Database/Eloquent/RelationNotFoundException.php
+ 34
+ Call to undefined relationship [type] on model [App\models\Book].
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [last_name] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [last_name] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+
+/sata2/home/users/vitovtov/www/all.vitovtov.info/vendor/laravel/framework/src/Illuminate/Support/Collection.php
+ 2160
+ Property [type] does not exist on this collection instance.
+

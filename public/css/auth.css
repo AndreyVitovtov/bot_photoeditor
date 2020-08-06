@@ -1,0 +1,111 @@
+/*----- AUTH -----*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #d2d6de;
+	position: relative;
+	font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+	color: #444;
+	margin-top: 100px;
+	font-weight: 300;
+}
+
+.auth {
+	width: 340px;
+	margin: 0 auto;
+	top: 60px;
+	left: calc( 50% - 180px );
+	position: absolute;
+	text-align: center;
+	background-color: #fff;
+	padding: 0 10px 20px 10px;
+}
+
+.auth>div {
+	position: relative;
+}
+
+.auth>div i {
+	position: absolute;
+	top: 26px;
+	right: 10px;
+	font-size: 20px;
+	color: #666;
+}
+
+.auth input {
+	width: calc(95% - 35px );
+	height: 34px;
+	margin-top: 20px;
+	border: solid 1px #d2d6de;
+	padding-left: 10px;
+	padding-right: 35px;
+	box-size: border-box;
+}
+
+.auth button {
+	margin-top: 15px;
+	border: solid 1px #367fa9;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: 0.2s;
+	background-color: #3c8dbc;
+	color: #fff;
+    border-radius: 2px;
+}
+
+.auth button:hover {
+	background-color: #2e6da4;
+	border-color: #337ab7;
+}
+
+.languages {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    padding: 0 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.languages:hover {
+    background-color: #d2d6de;
+}
+
+.languages:hover .languages-other {
+    display: inline;
+}
+
+.languages:hover img {
+
+}
+
+.languages img {
+    vertical-align: middle;
+    width: 20px;
+}
+
+.languages-other {
+    position: absolute;
+    margin-left: -25px;
+    z-index: 9999;
+    top: 25px;
+    padding: 0 15px;
+    background-color: #d2d6de;
+    display: none;
+}
+
+/*----------------- MEDIA -----------------*/
+

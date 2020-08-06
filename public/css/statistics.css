@@ -1,0 +1,30 @@
+td {
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.overflowXscroll {
+    width: 100%;
+    display: inline-block;
+    overflow-x: scroll;
+
+}
+
+.cp td:hover {
+    background-color: #367fa9;
+    color: #fff;
+}
+
+.chart_statistics_2 {
+    display: inline-block;
+    width: 49%;
+}
+
+@media (max-device-width: 766px) {
+    .chart_statistics_2 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+main .formats input[type="text"] {
+    width: calc( 100% - 12px );
+    font-size: 14px;
+    border: solid 1px #C3C3C3;
+    border-radius: 3px;
+    padding: 5px;
+}

@@ -1,0 +1,34 @@
+main .settings input[type="text"],
+main .settings input[type="number"],
+main .settings input[type="password"],
+main .settings input[type="date"] {
+    width: calc( 100% - 12px );
+    font-size: 14px;
+    border: solid 1px #C3C3C3;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+main .settings_buttons form>div:nth-child(1) {
+    display: flex;
+    height: 130px;
+}
+
+main .settings_buttons form>div:nth-child(1) div {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+}
+
+main .settings_buttons div:nth-child(1) div input[type="number"] {
+    width: 44px;
+    height: 25px;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+}
+
+.language-go {
+    width: 100%;
+}

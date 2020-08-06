@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-animation: fade-in 0.1s linear; /* Safari 4+ */
+    -moz-animation: fade-in 0.1s linear; /* Fx 5+ */
+    -o-animation: fade-in 0.1s linear; /* Opera 12+ */
+    animation: fade-in 0.1s linear; /* IE 10+, Fx 29+ */
+    height: 100%;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+header {
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px #808080;
+}
+
+.telegram header {
+    background-color: #0088cc;
+}
+.viber header {
+    background-color: #665CAC;
+}
+.facebook header {
+    background-color: #0078FF;
+}
+
+.telegram .button {
+    background-color: #0088cc;
+    border: solid 1px #0080c2;
+}
+.telegram .button:hover {
+    background-color: #0091d6;
+}
+
+.viber .button {
+    background-color: #665CAC;
+    border: solid 1px #6659a2;
+}
+.viber .button:hover {
+    background-color: #7167b6;
+}
+
+.facebook .button {
+    background-color: #0078FF;
+    border: solid 1px #0077f5;
+}
+.facebook .button:hover {
+    background-color: #0075f5;
+}
+
+main {
+    background-color: #ecf0f5;
+    padding: 15px 15px 90px 15px;
+    box-sizing: border-box;
+    min-height: calc(100% - 50px);
+}
+
+main h3 {
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+
+}
+
+main .content {
+    background-color: #fff;
+    border: solid 1px #d2d6de;
+    border-top: solid 3px #d2d6de;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    height: 200%;
+}
+
+main .pay-systems {
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+    margin: 0 10px;
+}
+
+.label img {
+    width: 80px;
+}
+
+div.label {
+    display: inline-block;
+    text-align: center;
+}
+
+div>label {
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: solid 1px #C3C3C3;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.summ {
+    position: relative;
+}
+
+.summ span {
+    position: absolute;
+    margin-top: 6px;
+    right: 15px;
+    color: #d1d1d1;
+}
+
+.email, .phone {
+    position: relative;
+}
+
+.email span, .phone span {
+    position: absolute;
+    margin-top: 6px;
+    right: 10px;
+    color: #d1d1d1;
+}
+
+.amount {
+    padding: 5px 45px 5px 5px;
+}
+
+#email, #phone {
+    padding: 5px 35px 5px 5px;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.button-center {
+    text-align: center;
+}
+
+footer {
+    background: #fff;
+    height: 50px;
+    margin-top: -50px;
+    line-height: 50px;
+}
+
+footer {
+    background-color: #fff;
+    color: #444;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-top: solid 1px #d2d6de;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3c8dbc;
+}
+
+footer a:hover {
+    color: #337ab7;
+}
+
+.invoice {
+    width: 30%;
+    background-color: #e9e9e9;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 5px 5px 5px;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+}
+
+.invoice table {
+    width: 100%;
+}
+
+.invoice table tr td {
+    text-align: left;
+    padding: 8px 0;
+}
+
+/*.invoice table tr td:nth-child(even ) {*/
+/*    padding-left: 15px;*/
+/*}*/
+
+.invoice-bottom {
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: 10px solid transparent;
+    background-image:
+        linear-gradient(#e9e9e9, #e9e9e9),
+        linear-gradient(to bottom right, transparent 50.5%, #e9e9e9 50.5%),
+        linear-gradient(to bottom left, transparent 50.5%, #e9e9e9 50.5%),
+        linear-gradient(to top right, transparent 50.5%, #e9e9e9 50.5%),
+        linear-gradient(to top left, transparent 50.5%, #e9e9e9 50.5%);
+    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+    background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-clip: padding-box, border-box, border-box, border-box, border-box;
+    background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+
+@media (max-device-width: 766px) {
+    .label {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .invoice, .invoice-bottom {
+        width: 95%;
+    }
+}
