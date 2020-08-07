@@ -12,6 +12,7 @@ class SettingsPages extends Model {
     public $fillable = [
         'name',
         'text',
-        'description'
+        'description',
+        'description_us'
     ];
 }

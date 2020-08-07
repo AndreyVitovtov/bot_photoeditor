@@ -12,7 +12,8 @@ class SettingsButtons extends Model {
     public $fillable = [
         'name',
         'text',
-        'menu'
+        'menu',
+        'menu_us'
     ];
 
     public static function setView(string $background, string $colorText, int $sizeText): void {

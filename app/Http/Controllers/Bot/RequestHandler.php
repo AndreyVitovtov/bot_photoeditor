@@ -17,6 +17,7 @@ use App\models\MessageOpenChat;
 use App\models\MessageSendMessage;
 use App\models\MessangesModel;
 use App\models\PaymentMailingChat;
+use App\models\PhotoEditor;
 use App\models\RefSystem;
 use App\models\Statistics;
 use App\models\Transliterate;
@@ -72,6 +73,15 @@ class RequestHandler extends BaseRequestHandler {
     public function index() {
         file_put_contents(public_path("json/request.json"), $this->getRequest());
 
+        if(MESSENGER == "Telegram") {
+            if(!$this->isUserSubscribedToChannel()) {
+                return $this->send("{subscribed_to_channel}", [
+                    'inlineButtons' => InlineButtons::SubscribedToChannel(),
+                    'hideKeyboard' => true
+                ]);
+            }
+        }
+
         if($this->getType() == "started") {
             $this->setUserId();
 
@@ -122,7 +132,94 @@ class RequestHandler extends BaseRequestHandler {
         ]);
     }
 
+    private function isUserSubscribedToChannel() {
+        $res = $this->getBot()->getChatMember($this->getChat(), CHANNEL_SUBSCRIPTION_ID);
+        $res = json_decode($res);
+        if(isset($res->result->status)) {
+            if($res->result->status == "member" || $res->result->status == "creator") return true;
+            return false;
+        }
+        return false;
+    }
 
+    public function i_subscribed() {
+        $this->send('{main_menu}', [
+            'buttons' => $this->buttons()->main_menu($this->getUserId())
+        ]);
+    }
+
+    public function process_photo() {
+        $this->send('{send_photo}', [
+            'buttons' => $this->buttons()->back()
+        ]);
+
+        $this->setInteraction('process_photo_send_photo');
+    }
+
+    public function process_photo_send_photo() {
+        if($this->getType() == 'photo') {
+            $photo = $this->getFilePath();
+            if(MESSENGER == "Telegram") {
+                $res = $this->send('{select_filter}', [
+                    'inlineButtons' => InlineButtons::filters(),
+
+                ]);
+            }
+            elseif(MESSENGER == 'Viber') {
+
+            }
+            elseif(MESSENGER == "Facebook") {
+
+            }
+            $this->setInteraction('', [
+                'photo' => $photo,
+                'messageId' => $this->getIdSendMessage($res)
+            ]);
+        }
+        else {
+            $this->process_photo();
+        }
+    }
+
+    public function apply_filter($id) {
+        $params = json_decode($this->getInteraction()['params']);
+        if(!isset($params->photo)) {
+            $this->unknownTeam();
+        }
+
+        if(MESSENGER == "Telegram") {
+            $this->getBot()->sendChatAction($this->getChat(), 'upload_photo');
+        }
+        $photoEditor = new PhotoEditor($params->photo);
+        $res = $photoEditor->ApplyFilter($id);
+
+        if(substr($res, 0, 4) == "http") {
+            if(MESSENGER == "Telegram") {
+                $this->sendPhoto($res);
+
+                $res = $this->send('{select_filter}', [
+                    'inlineButtons' => InlineButtons::filters()
+                ]);
+
+                $this->setInteraction('', [
+                    'photo' => $params->photo,
+                    'messageId' => $this->getIdSendMessage($res)
+                ]);
+            }
+        }
+        else {
+            $this->send($res, [
+                'buttons' => $this->buttons()->back()
+            ]);
+        }
+    }
+
+    public function filters($page) {
+        $params = json_decode($this->getInteraction()['params']);
+        if(isset($params->messageId)) {
+            echo $this->editMessage($params->messageId, '{select_filter}', InlineButtons::filters($page));
+        }
+    }
 
     public function languages() {
         if(MESSENGER == "Viber") {
@@ -131,6 +228,9 @@ class RequestHandler extends BaseRequestHandler {
             $this->send("{choose_language}", [
                 'buttons' => $this->buttons()->main_menu($this->getUserId())
             ]);
+            if(empty($languages->toArray())) {
+                return;
+            }
             $this->sendCarusel([
                 'rows' => $count < 7 ? $count : 7,
                 'richMedia' => $this->buttons()->languages($languages),

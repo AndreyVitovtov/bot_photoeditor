@@ -12,9 +12,11 @@ class ButtonsTelegram {
 //        $user = BotUsers::find($userId);
 
         return [
-            ["{create_chat}"],
-            ["{my_chats}"],
+            ["{process_photo}"],
+            ["{free_access}"],
+            ["{paid_access}"],
             ["{contacts}"],
+            ["{group}"],
             ["{languages}"]
         ];
     }

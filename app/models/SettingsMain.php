@@ -12,6 +12,7 @@ class SettingsMain extends Model {
     public $fillable = [
         'prefix',
         'name',
+        'name_us',
         'value',
         'type'
     ];

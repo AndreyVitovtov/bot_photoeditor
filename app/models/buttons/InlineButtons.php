@@ -51,6 +51,55 @@ class InlineButtons {
         ];
     }
 
+    public static function SubscribedToChannel() {
+        return [[[
+            "text" => "{subscribed}",
+            "url" => "https://t.me/".CHANNEL_SUBSCRIPTION_NAME
+        ]],
+        [[
+            "text" => "{i_subscribed}",
+            "callback_data" => "i_subscribed"
+        ]]];
+    }
+
+    public static function filters($page = 1) {
+        $filtersAll = json_decode(file_get_contents(public_path().'/json/dict.json'), true);
+        $buttons = [];
+        $filters = array_chunk($filtersAll, 8);
+        foreach ($filters[$page - 1] as $id => $filter) {
+            $buttons[] = [[
+                "text" => ucfirst($filter['description']),
+                "callback_data" => 'apply_filter__'.$id
+            ]];
+        }
+
+        $nextPage = $page+1;
+        $prevPage = $page-1;
+
+        if($page == 1) {
+            $buttons[] = [[
+                "text" => "{next}",
+                "callback_data" => 'filters__'.$nextPage
+            ]];
+        }
+        elseif($page == ceil(count($filtersAll) / 8)) {
+            $buttons[] = [[
+                "text" => "{prev}",
+                "callback_data" => 'filters__'.$prevPage
+            ]];
+        }
+        else {
+            $buttons[] = [[
+                "text" => "{prev}",
+                "callback_data" => 'filters__'.$prevPage
+            ], [
+                "text" => "{next}",
+                "callback_data" => 'filters__'.$nextPage
+            ]];
+        }
+        return $buttons;
+    }
+
     private static function pagesButtons($model, $methodPages, $method, $name = 'name', $page = '1') {
         $count = $model::count();
 

@@ -76,9 +76,11 @@ class ButtonsViber {
 
 //        if($user->access == '1') {
            return [
-               $this->button(6, 1, 'create_chat', '{create_chat}'),
-               $this->button(6, 1, 'my_chats', '{my_chats}'),
+               $this->button(6, 1, 'process_photo', '{process_photo}'),
+               $this->button(6, 1, 'free_access', '{free_access}'),
+               $this->button(6, 1, 'paid_access', '{paid_access}'),
                $this->button(6, 1, 'contacts', '{contacts}'),
+               $this->button(6, 1, 'group', '{group}'),
                $this->button(6, 1, 'languages', '{languages}'),
            ];
     }

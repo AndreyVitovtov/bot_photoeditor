@@ -48,7 +48,6 @@ class Settings {
     public function settingsMainAdd(Request $request) {
         $fills = $request->input();
         unset($fills['_token']);
-
         $settingsMain = new SettingsMain();
         $settingsMain->fill($fills);
         $settingsMain->save();
@@ -82,6 +81,7 @@ class Settings {
 
     public function settingsPagesAdd(Request $request) {
         $fills = $request->input();
+
         $text = base64_encode($fills['text']);
         unset($fills['_token']);
         unset($fills['text']);

@@ -259,7 +259,9 @@
         }
 
         public function sendPhoto($img, $message = null, $params = [], $n = []) {
-            $message = $this->valueSubstitution($message, "pages", $n);
+            if($message != null) {
+                $message = $this->valueSubstitution($message, "pages", $n);
+            }
             $params = $this->valueSubstitutionArray($params, $n);
             return $this->bot->sendPhoto($this->chat, $img, $message, $params);
         }

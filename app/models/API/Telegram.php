@@ -110,10 +110,27 @@ class Telegram {
         }
 
         if(!empty($params['inlineButtons'])) {
-            $data['reply_markup'] = [
-                'inline_keyboard' => $params['inlineButtons'],
-                'resize_keyboard' => true
-            ];
+            if(isset($data['reply_markup'])) {
+                $data['reply_markup']['inline_keyboard'] = $params['inlineButtons'];
+                $data['reply_markup']['resize_keyboard'] = true;
+            }
+            else {
+                $data['reply_markup'] = [
+                    'inline_keyboard' => $params['inlineButtons'],
+                    'resize_keyboard' => true
+                ];
+            }
+        }
+
+        if(!empty($params['hideKeyboard'])) {
+            if(isset($data['reply_markup'])) {
+                $data['reply_markup']['hide_keyboard'] = $params['hideKeyboard'];
+            }
+            else {
+                $data['reply_markup'] = [
+                    'hide_keyboard' => $params['hideKeyboard']
+                ];
+            }
         }
         return $this->makeRequest('sendMessage', $data);
     }
@@ -186,7 +203,7 @@ class Telegram {
     }
 
     public function getFilePath($fileId) {
-        $filePath = file_get_contents("https://api.telegram.org/bot".$this->token."/getFile?file_id=".$fileId);
+        $filePath = file_get_contents("https://api.telegram.org/bot$this->token/getFile?file_id=$fileId");
         $filePath = json_decode($filePath, true);
         $filePath = $filePath['result']['file_path'];
         return "https://api.telegram.org/file/bot$this->token/$filePath";
@@ -318,4 +335,109 @@ class Telegram {
         return 'other';
     }
 
+    public function forwardMessage($chat, $from_chat_id, $message_id) {
+        $data = array(
+            'chat_id' => $chat,
+            'from_chat_id' => $from_chat_id,
+            'message_id' => $message_id
+        );
+
+        return $this->makeRequest('forwardMessage', $data);
+    }
+
+    public function sendLocation($chat, $lat, $lng) {
+        $data = array(
+            'chat_id' => $chat,
+            'latitude' => $lat,
+            'longitude' => $lng
+        );
+
+        return $this->makeRequest('sendLocation', $data);
+    }
+
+    public function sendSticker($chat, $idSticker) {
+        $data = array(
+            'chat_id' => $chat,
+            'sticker' => $idSticker
+        );
+
+        return $this->makeRequest('sendSticker', $data);
+    }
+
+    public function sendContact($chat, $phone, $name, $params = []) {
+        $data = [
+            'chat_id' => $chat,
+            'phone_number' => $phone,
+            'first_name' => $name
+        ];
+
+        if(!empty($params['inlineButtons'])) {
+            $data['reply_markup'] = json_encode([
+                'inline_keyboard' => $params['inlineButtons'],
+                'resize_keyboard' => false
+            ]);
+        }
+
+        if(!empty($params['buttons']))  {
+            $data['reply_markup'] = [
+                'keyboard' => $params['buttons'],
+                'resize_keyboard' => true,
+                'one_time_keyboard' => false,
+                'parse_mode' => 'HTML',
+                'selective' => true
+            ];
+        }
+
+        return $this->makeRequest('sendContact', $data);
+    }
+
+    public function editMessageReplyMarkup($chat, $messageId, $reply_markup = null) {
+        return $this->makeRequest('editMessageReplyMarkup', [
+            'chat_id' => $chat,
+            'message_id' => $messageId,
+            'reply_markup' => $reply_markup
+        ]);
+    }
+
+    public function getChatMember($idUser, $chat) {
+        return $this->makeRequest('getChatMember', [
+            'chat_id' => $chat,
+            'user_id' => $idUser
+        ]);
+    }
+
+    public function payment($data) {
+        $data = [
+            "chat_id" => $data['chat'],
+            "title" => $data['title'],
+            "description" => $data['description'],
+            "payload" => $data['payload'],
+            "provider_token" => $data['provider_token'],
+            "start_parameter" => $data['start_parameter'],//foo
+            "currency" => $data['currency'],//UAH
+            "prices" => [
+                [
+                    'label' => $data['price']['label'],
+                    'amount' => $data['price']['amount']//100 - 1грн.
+                ]
+            ],
+            //Необязательные
+            "need_name" => true,
+            //"need_email" => "",
+            "need_phone_number" => true
+            //"reply_markup" => $reply_markup
+        ];
+
+        return $this->makeRequest('sendInvoice', $data);
+    }
+
+    public function answerPreCheckoutQuery($pre_checkout_query_id, $ok = true, $error_message = null) {
+        $data = [
+            "pre_checkout_query_id" => $pre_checkout_query_id,
+            "ok" => $ok,
+            "error_message" => $error_message
+        ];
+
+        return $this->makeRequest('answerPreCheckoutQuery', $data);
+    }
 }
