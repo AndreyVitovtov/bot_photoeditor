@@ -13,7 +13,7 @@ class AdminSeeder extends Seeder {
      */
     public function run() {
 
-        DB::table('admin_chatlive.admin')->insert(
+        DB::table('admin')->insert(
             ["id" => "1","login" => "admin","password" => '$2y$10$eYxRUgU2XiJH3MN86XfTweKFmL3HJDuu2vhSnZ7D61TkgJDV7QIsq',"name" => "Administrator","language" => "us"]
         );
 

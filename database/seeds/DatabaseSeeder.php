@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         $this->call(AdminSeeder::class);
         $this->call(ContactsTypeSeeder::class);
-        $this->call(SettingsButtonsSeeder::class);
         $this->call(SettingsMainSeeder::class);
+        $this->call(SettingsButtonsSeeder::class);
         $this->call(SettingsPagesSeeder::class);
     }
 }

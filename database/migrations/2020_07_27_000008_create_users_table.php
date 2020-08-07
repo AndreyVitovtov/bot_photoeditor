@@ -34,10 +34,8 @@ class CreateUsersTable extends Migration
             $table->string('messenger')->nullable();
             $table->integer('access')->default('0');
             $table->integer('access_free')->default('0');
-            $table->integer('user_chat')->nullable()->default('0');
             $table->integer('start')->default('0');
             $table->integer('language')->default('0');
-            $table->integer('count_chats')->default('0');
         });
     }
 
