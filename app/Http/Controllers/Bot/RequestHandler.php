@@ -215,7 +215,6 @@ class RequestHandler extends BaseRequestHandler {
     }
 
     public function filters($page) {
-        dd($page);
         $params = json_decode($this->getInteraction()['params']);
         if(isset($params->messageId)) {
             echo $this->editMessage($params->messageId, '{select_filter}', InlineButtons::filters($page));
