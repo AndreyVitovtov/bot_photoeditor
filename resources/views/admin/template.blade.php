@@ -109,6 +109,12 @@
                 'menu' => 'mailing',
                 'url' => '/admin/mailing'])
             @endcomponent
+            @component('menu.menu-item', [
+                'name' => 'filters',
+                'icon' => 'icon-file-image',
+                'menu' => 'filters',
+                'url' => '/admin/filters'])
+            @endcomponent
             @component('menu.menu-rolled', [
                 'nameItem' => 'languages',
                 'icon' => 'icon-language-1',

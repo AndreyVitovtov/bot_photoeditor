@@ -64,6 +64,11 @@ Route::group(['middleware' => 'auth', 'prefix'=>'admin'], function() {
         Route::post('/mark-inactive-users', "Admin\Mailing@markInactiveUsers");
     });
 
+    Route::prefix('/filters')->group(function() {
+        Route::get('/', "Admin\Filters@index")->name('filters');
+        Route::post('/save', "Admin\Filters@save")->name('filters-save');
+    });
+
     Route::prefix('users')->group(function () {
         Route::get('/', "Admin\Users@index");
         Route::get('/profile/{id}', "Admin\Users@profile");

@@ -27,6 +27,7 @@ return [
     'chats' => 'Чаты',
     'mailing_users' => 'Пользователям',
     'mailing_chat_users' => 'Пользователям чата',
+    'filters' => 'Фильтры',
 
     'developer_admin_panel' => 'Админка',
     'developer_webhook' => 'Webhook',

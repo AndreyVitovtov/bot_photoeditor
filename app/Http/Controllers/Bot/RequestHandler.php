@@ -153,7 +153,18 @@ class RequestHandler extends BaseRequestHandler {
         }
     }
 
-    public function ability_process_photos() {
+    private function deletePhoto() {
+        if(MESSENGER == "Viber") {
+            $params = json_decode($this->getInteraction()['params']);
+            if(isset($params->photo)) {
+                if(file_exists(public_path().'/photo/'.$params->photo)) {
+                    unlink(public_path().'/photo/'.$params->photo);
+                }
+            }
+        }
+    }
+
+    private function ability_process_photos() {
         $countProcessPhoto = ProcessPhoto::where('users_id', $this->getUserId())
             ->where('date', date('Y-m-d'))
             ->count();
@@ -164,6 +175,8 @@ class RequestHandler extends BaseRequestHandler {
                     'buttons' => $this->buttons()->main_menu($this->getUserId())
                 ]);
 
+                $this->deletePhoto();
+
                 return false;
             }
         }
@@ -173,6 +186,8 @@ class RequestHandler extends BaseRequestHandler {
                     'buttons' => $this->buttons()->main_menu($this->getUserId())
                 ]);
 
+                $this->deletePhoto();
+
                 return false;
             }
         }
@@ -181,6 +196,8 @@ class RequestHandler extends BaseRequestHandler {
                 $this->send('{have_exhausted_the_ability_to_process_photos_get_paid_access}', [
                     'buttons' => $this->buttons()->main_menu($this->getUserId())
                 ]);
+
+                $this->deletePhoto();
 
                 return false;
             }

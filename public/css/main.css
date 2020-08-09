@@ -23,6 +23,11 @@ body {
     animation: fade-in 0.1s linear; /* IE 10+, Fx 29+ */
 }
 
+a {
+    color: #3c8dbc;
+    text-decoration: none;
+}
+
 .hidden {
     display: none;
 }

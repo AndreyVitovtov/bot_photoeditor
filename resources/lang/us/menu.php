@@ -27,6 +27,7 @@ return [
     'chats' => 'Chats',
     'mailing_users' => 'Users',
     'mailing_chat_users' => 'Chat users',
+    'filters' => 'Filters',
 
     'developer_admin_panel' => 'Admin panel',
     'developer_webhook' => 'Webhook',
