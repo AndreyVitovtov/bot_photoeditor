@@ -72,17 +72,37 @@ class ButtonsViber {
     }
 
     public function main_menu($userId) {
-//        $user = BotUsers::find($userId);
+        $user = BotUsers::find($userId);
 
-//        if($user->access == '1') {
-           return [
-               $this->button(6, 1, 'process_photo', '{process_photo}'),
-               $this->button(6, 1, 'free_access', '{free_access}'),
-               $this->button(6, 1, 'paid_access', '{paid_access}'),
-               $this->button(6, 1, 'contacts', '{contacts}'),
-               $this->button(6, 1, 'group', '{group}'),
-               $this->button(6, 1, 'languages', '{languages}'),
-           ];
+        if($user->access == '1') {
+            if($user->access_free == '1') {
+                return [
+                    $this->button(6, 1, 'process_photo', '{process_photo}'),
+                    $this->button(6, 1, 'paid_access', '{paid_access}'),
+                    $this->button(6, 1, 'contacts', '{contacts}'),
+                    $this->button(6, 1, 'group', '{group}'),
+                    $this->button(6, 1, 'languages', '{languages}'),
+                ];
+            }
+            else {
+                return [
+                    $this->button(6, 1, 'process_photo', '{process_photo}'),
+                    $this->button(6, 1, 'contacts', '{contacts}'),
+                    $this->button(6, 1, 'group', '{group}'),
+                    $this->button(6, 1, 'languages', '{languages}'),
+                ];
+            }
+        }
+        else {
+            return [
+                $this->button(6, 1, 'process_photo', '{process_photo}'),
+                $this->button(6, 1, 'free_access', '{free_access}'),
+                $this->button(6, 1, 'paid_access', '{paid_access}'),
+                $this->button(6, 1, 'contacts', '{contacts}'),
+                $this->button(6, 1, 'group', '{group}'),
+                $this->button(6, 1, 'languages', '{languages}'),
+            ];
+        }
     }
 
     public function back() {
@@ -123,6 +143,10 @@ class ButtonsViber {
             $this->button(6, 1, 'advertising', '{contacts_advertising}'),
             $this->button(6, 1, 'offers', '{contacts_offers}'),
         ];
+    }
+
+    public function languages() {
+
     }
 
     private function pagesButtons($res, $method, $name = 'name', $page = '1') {

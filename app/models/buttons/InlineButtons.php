@@ -100,6 +100,17 @@ class InlineButtons {
         return $buttons;
     }
 
+    public static function group() {
+        return [[[
+            "text" => "{group}",
+            "url" => 'https://t.me/'.GROUP_TELEGRAM
+        ]]];
+    }
+
+    public static function languages() {
+
+    }
+
     private static function pagesButtons($model, $methodPages, $method, $name = 'name', $page = '1') {
         $count = $model::count();
 

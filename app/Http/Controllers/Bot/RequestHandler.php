@@ -12,6 +12,7 @@ use App\models\ContactsModel;
 use App\models\ContactsType;
 use App\models\Language;
 use App\models\PhotoEditor;
+use App\models\ProcessPhoto;
 use App\models\RefSystem;
 use App\models\Statistics;
 use App\models\Transliterate;
@@ -34,7 +35,7 @@ class RequestHandler extends BaseRequestHandler {
             $this->messenger = "Facebook";
         }
         else {
-            $this->messenger = "Viber";
+            $this->messenger = "Telegram";
         }
 
         define("MESSENGER", $this->messenger);
@@ -142,12 +143,50 @@ class RequestHandler extends BaseRequestHandler {
     }
 
     public function process_photo() {
-        $this->send('{send_photo}', [
-            'buttons' => $this->buttons()->back(),
-            'input' => 'regular'
-        ]);
+        if($this->ability_process_photos()) {
+            $this->send('{send_photo}', [
+                'buttons' => $this->buttons()->back(),
+                'input' => 'regular'
+            ]);
 
-        $this->setInteraction('process_photo_send_photo');
+            $this->setInteraction('process_photo_send_photo');
+        }
+    }
+
+    public function ability_process_photos() {
+        $countProcessPhoto = ProcessPhoto::where('users_id', $this->getUserId())
+            ->where('date', date('Y-m-d'))
+            ->count();
+        $user = BotUsers::find($this->getUserId());
+        if($user->access == '0') {
+            if($countProcessPhoto >= COUNT_PHOTO_EDIT) {
+                $this->send('{have_exhausted_the_opportunity_to_get_access}', [
+                    'buttons' => $this->buttons()->main_menu($this->getUserId())
+                ]);
+
+                return false;
+            }
+        }
+        elseif($user->access == '1' && $user->access_free == '0') {
+            if($countProcessPhoto >= COUNT_PHOTO_EDIT_PAID_ACCESS) {
+                $this->send('{have_exhausted_the_ability_to_process_photos}', [
+                    'buttons' => $this->buttons()->main_menu($this->getUserId())
+                ]);
+
+                return false;
+            }
+        }
+        elseif($user->access == '1' && $user->access_free == '1') {
+            if($countProcessPhoto >= COUNT_PHOTO_EDIT_FREE_ACCESS) {
+                $this->send('{have_exhausted_the_ability_to_process_photos_get_paid_access}', [
+                    'buttons' => $this->buttons()->main_menu($this->getUserId())
+                ]);
+
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public function process_photo_send_photo() {
@@ -193,6 +232,8 @@ class RequestHandler extends BaseRequestHandler {
     }
 
     public function apply_filter($id) {
+        if(! $this->ability_process_photos()) return;
+
         $params = json_decode($this->getInteraction()['params']);
         if(!isset($params->photo)) {
             $this->unknownTeam();
@@ -203,6 +244,12 @@ class RequestHandler extends BaseRequestHandler {
         }
         $photoEditor = new PhotoEditor($params->photo);
         $res = $photoEditor->ApplyFilter($id);
+
+        $pp = new ProcessPhoto();
+        $pp->users_id = $this->getUserId();
+        $pp->date = date('Y-m-d');
+        $pp->time = date('H:i:s');
+        $pp->save();
 
         if(substr($res, 0, 4) == "http") {
             if(MESSENGER == "Telegram") {
@@ -247,6 +294,23 @@ class RequestHandler extends BaseRequestHandler {
             $this->sendCarusel([
                 'richMedia' => $this->buttons()->filters($page),
                 'buttons' => $this->buttons()->back()
+            ]);
+        }
+    }
+
+    public function free_access() {
+        $this->send("{free_access}", [
+            'buttons' => $this->buttons()->main_menu($this->getUserId())
+        ]);
+
+        if(MESSENGER == "Telegram") {
+            $this->send('https://t.me/'.NAME_TELEGRAM_BOT."?start=".$this->getChat(), [
+                'buttons' => $this->buttons()->main_menu($this->getUserId())
+            ]);
+        }
+        elseif(MESSENGER == "Viber") {
+            $this->send('viber://pa?chatURI='.NAME_VIBER_BOT.'&context='.$this->getChat(), [
+                'buttons' => $this->buttons()->main_menu($this->getUserId())
             ]);
         }
     }
@@ -365,11 +429,13 @@ class RequestHandler extends BaseRequestHandler {
         exit;
     }
 
-//    public function group() {
-//        $this->send("{group}", [
-//            'inlineButtons' => InlineButtons::group()
-//        ]);
-//    }
+    public function group() {
+        if(MESSENGER == "Telegram") {
+            $this->send("{group}", [
+                'inlineButtons' => InlineButtons::group()
+            ]);
+        }
+    }
 
 
 
@@ -380,22 +446,20 @@ class RequestHandler extends BaseRequestHandler {
 //      $this->send("REF SYSTEM ".$chat);
     }
 
-//    public function userAccess($id) {
-//        $count = RefSystem::where('referrer', $id)->count();
-//
-//        if($count == COUNT_INVITES_ACCESS) {
-//            $user = BotUsers::find($id);
-//            $user->access = '1';
-//            $user->access_free = '1';
-//            $user->save();
-//
-//            $this->sendTo($user->chat, "{got_free_access}", [
-//                'buttons' => $this->buttons()->main_menu($id)
-//            ], [
-//                'count' => COUNT_INVITES_ACCESS
-//            ]);
-//        }
-//    }
+    public function userAccess($id) {
+        $count = RefSystem::where('referrer', $id)->count();
+
+        if($count == COUNT_INVITES_ACCESS) {
+            $user = BotUsers::find($id);
+            $user->access = '1';
+            $user->access_free = '1';
+            $user->save();
+
+            $this->sendTo($user->chat, "{got_free_access}", [
+                'buttons' => $this->buttons()->main_menu($id)
+            ]);
+        }
+    }
 
 
 }
