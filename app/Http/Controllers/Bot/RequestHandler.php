@@ -35,7 +35,7 @@ class RequestHandler extends BaseRequestHandler {
             $this->messenger = "Facebook";
         }
         else {
-            $this->messenger = "Telegram";
+            $this->messenger = "Viber";
         }
 
         define("MESSENGER", $this->messenger);
@@ -212,6 +212,19 @@ class RequestHandler extends BaseRequestHandler {
             if($this->getType() == "picture") {
                 $photo = $this->getFilePath();
 
+                $ext = explode('.', explode('?', $photo)[0]);
+                $ext = end($ext);
+                $fileName =  md5(time().$this->getChat()).".".$ext;
+
+                if(!copy($photo, public_path().'/photo/'.$fileName)) {
+                    $this->send('{error}', [
+                        'buttons' => $this->buttons()->main_menu($this->getUserId())
+                    ]);
+                    return;
+                }
+
+                $photo = url('/photo/'.$fileName);
+
                 $this->send('{select_filter}', [
                     'buttons' => $this->buttons()->back()
                 ]);
@@ -242,7 +255,9 @@ class RequestHandler extends BaseRequestHandler {
         if(MESSENGER == "Telegram") {
             $this->getBot()->sendChatAction($this->getChat(), 'upload_photo');
         }
+
         $photoEditor = new PhotoEditor($params->photo);
+
         $res = $photoEditor->ApplyFilter($id);
 
         $pp = new ProcessPhoto();
@@ -420,6 +435,14 @@ class RequestHandler extends BaseRequestHandler {
     }
 
     public function back() {
+        if(MESSENGER == "Viber") {
+            $params = json_decode($this->getInteraction()['params']);
+            if(isset($params->photo)) {
+                if(file_exists(public_path().'/photo/'.$params->photo)) {
+                    unlink(public_path().'/photo/'.$params->photo);
+                }
+            }
+        }
 //        $this->delMessage();
         $this->delInteraction();
 

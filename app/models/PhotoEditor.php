@@ -1,10 +1,9 @@
 <?php
-
-namespace App\models;
+    namespace App\models;
 
     use Exception;
 
-    class PhotoEditor {
+class PhotoEditor {
     	private $image;
 
     	public function __construct($image) {
@@ -15,35 +14,35 @@ namespace App\models;
     		if (filter_var($image, FILTER_VALIDATE_URL)) {
 				$content = file_get_contents($image);
 				$ext = pathinfo($image, PATHINFO_EXTENSION);
-				if(in_array($ext, ['jpg', 'jpeg', 'png'], true)) {
+				if(in_array($ext, ['jpg', 'jpeg', 'png', 'JPG'], true)) {
 					$base64 = 'data:image/'.$ext.';base64,'.base64_encode($content);
 				} else {
-				    return false;
-//					throw new Exception('File format is not supported');
+//				    return false;
+					throw new Exception('File format is not supported');
 				}
 			} elseif (strpos($image, "\0") === false) {
 				if(file_exists($image)) {
 					$content = file_get_contents($image);
 					$ext = pathinfo($image, PATHINFO_EXTENSION);
-					if(in_array($ext, ['jpg', 'jpeg', 'png'], true)) {
+					if(in_array($ext, ['jpg', 'jpeg', 'png', 'JPG'], true)) {
 						$base64 = 'data:image/'.$ext.';base64,'.base64_encode($content);
 					} else {
-					    return false;
-//						throw new Exception('File format is not supported');
+//                        return false;
+						throw new Exception('File format is not supported');
 					}
 				} else {
-				    return false;
-//					throw new Exception('File does not exist');
+//                    return false;
+					throw new Exception('File does not exist');
 				}
 			} else {
-    		    return false;
-//				throw new Exception('Not a valid URL or PATH');
+//                return false;
+				throw new Exception('Not a valid URL or PATH');
 			}
 			if(isset($base64)) {
 				$this->image = $base64;
 			} else {
-			    return false;
-//				throw new Exception('Unable to encode');
+//                return false;
+				throw new Exception('Unable to encode');
 			}
     	}
 
@@ -52,8 +51,19 @@ namespace App\models;
             $dict = json_decode($dict, true);
 
     		if(isset($dict[$id])) {
-    			$url = 'http://color.photofuneditor.com/'.$dict[$id]['text_code'].'-nvegas';
+    			$ea = file_get_contents('http://color.photofuneditor.com/filte-86-hd');
+    			$ea = preg_replace('/\s+/', ' ', $ea);
+    			preg_match('!} filtern =(.*?);!', $ea, $m);
+    			if(isset($m[1])) {
+    				$lb = str_ireplace([' ', "'", '+'], '', $m[1]);
+    				$lb = str_ireplace('filtern', $dict[$id]['text_code'], $lb);
+    				$url = 'http://color.photofuneditor.com/'.$lb;
+    			} else {
+//                    return false;
+    				throw new Exception('Fatal unknown error, contact programmer');
+    			}
     		} else {
+//                return false;
     			throw new Exception('Invalid filter identifier');
     		}
 
