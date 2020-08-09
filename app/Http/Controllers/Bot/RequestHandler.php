@@ -8,21 +8,14 @@ use App\models\buttons\ButtonsFacebook;
 use App\models\buttons\ButtonsViber;
 use App\models\buttons\ButtonsTelegram;
 use App\models\buttons\InlineButtons;
-use App\models\Chat;
 use App\models\ContactsModel;
 use App\models\ContactsType;
 use App\models\Language;
-use App\models\MailingChat;
-use App\models\MessageOpenChat;
-use App\models\MessageSendMessage;
-use App\models\MessangesModel;
-use App\models\PaymentMailingChat;
 use App\models\PhotoEditor;
 use App\models\RefSystem;
 use App\models\Statistics;
 use App\models\Transliterate;
 use App\models\AdminChat;
-use App\models\UsersChats;
 use DateTime;
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -41,7 +34,7 @@ class RequestHandler extends BaseRequestHandler {
             $this->messenger = "Facebook";
         }
         else {
-            $this->messenger = "Telegram";
+            $this->messenger = "Viber";
         }
 
         define("MESSENGER", $this->messenger);
@@ -150,34 +143,52 @@ class RequestHandler extends BaseRequestHandler {
 
     public function process_photo() {
         $this->send('{send_photo}', [
-            'buttons' => $this->buttons()->back()
+            'buttons' => $this->buttons()->back(),
+            'input' => 'regular'
         ]);
 
         $this->setInteraction('process_photo_send_photo');
     }
 
     public function process_photo_send_photo() {
-        if($this->getType() == 'photo') {
-            $photo = $this->getFilePath();
-            if(MESSENGER == "Telegram") {
+        if(MESSENGER == "Telegram") {
+            if($this->getType() == 'photo') {
+                $photo = $this->getFilePath();
+
                 $res = $this->send('{select_filter}', [
                     'inlineButtons' => InlineButtons::filters(),
 
                 ]);
-            }
-            elseif(MESSENGER == 'Viber') {
 
+                $this->setInteraction('', [
+                    'photo' => $photo,
+                    'messageId' => $this->getIdSendMessage($res)
+                ]);
             }
-            elseif(MESSENGER == "Facebook") {
-
+            else {
+                $this->process_photo();
             }
-            $this->setInteraction('', [
-                'photo' => $photo,
-                'messageId' => $this->getIdSendMessage($res)
-            ]);
         }
-        else {
-            $this->process_photo();
+        elseif(MESSENGER == 'Viber') {
+            if($this->getType() == "picture") {
+                $photo = $this->getFilePath();
+
+                $this->send('{select_filter}', [
+                    'buttons' => $this->buttons()->back()
+                ]);
+
+                $this->sendCarusel([
+                    'richMedia' => $this->buttons()->filters(),
+                   'buttons' => $this->buttons()->back()
+                ]);
+
+                $this->setInteraction('', [
+                    'photo' => $photo
+                ]);
+            }
+        }
+        elseif(MESSENGER == "Facebook") {
+
         }
     }
 
@@ -206,6 +217,16 @@ class RequestHandler extends BaseRequestHandler {
                     'messageId' => $this->getIdSendMessage($res)
                 ]);
             }
+            elseif(MESSENGER == "Viber") {
+                $this->sendImage($res, null, [
+                    'buttons' => $this->buttons()->back()
+                ]);
+
+                $this->sendCarusel([
+                    'richMedia' => $this->buttons()->filters(),
+                    'buttons' => $this->buttons()->back()
+                ]);
+            }
         }
         else {
             $this->send($res, [
@@ -216,8 +237,17 @@ class RequestHandler extends BaseRequestHandler {
 
     public function filters($page) {
         $params = json_decode($this->getInteraction()['params']);
-        if(isset($params->messageId)) {
-            echo $this->editMessage($params->messageId, '{select_filter}', InlineButtons::filters($page));
+
+        if(MESSENGER == "Telegram") {
+            if(isset($params->messageId)) {
+                $this->editMessage($params->messageId, '{select_filter}', InlineButtons::filters($page));
+            }
+        }
+        elseif(MESSENGER == "Viber") {
+            $this->sendCarusel([
+                'richMedia' => $this->buttons()->filters($page),
+                'buttons' => $this->buttons()->back()
+            ]);
         }
     }
 

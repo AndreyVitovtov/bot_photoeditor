@@ -91,6 +91,31 @@ class ButtonsViber {
         ];
     }
 
+    public function filters($page = 1) {
+        $countButtons = 41;
+        $filtersAll = json_decode(file_get_contents(public_path()."/json/dict.json"), true);
+        $filters = array_chunk($filtersAll, $countButtons);
+        $buttons = [];
+        foreach($filters[$page-1] as $id => $filter) {
+            $buttons[] = $this->button(6, 1, 'apply_filter__'.$id, $filter['description']);
+        }
+
+        $nextPage = $page+1;
+        $prevPage = $page-1;
+
+        if($page == 1) {
+            $buttons[] = $this->button(6, 1, 'filters__'.$nextPage, '{next}');
+        }
+        elseif($page == ceil(count($filtersAll) / $countButtons)) {
+            $buttons[] = $this->button(6, 1, 'filters__'.$prevPage, '{prev}');
+        }
+        else {
+            $buttons[] = $this->button(3, 1, 'filters__'.$prevPage, '{prev}');
+            $buttons[] = $this->button(3, 1, 'filters__'.$nextPage, '{next}');
+        }
+        return $buttons;
+    }
+
     public function contacts() {
         return [
             $this->button(6, 1, 'general', '{contacts_general}'),
