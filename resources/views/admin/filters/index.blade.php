@@ -27,7 +27,7 @@
                         <tr>
                             <td>
                                 <input type="checkbox" name="filters[]" value="{{ $id }}"
-                                @if(isset($_filters[$id]))
+                                @if(in_array($id, $_filters))
                                     checked
                                 @endif
                                 >

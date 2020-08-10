@@ -7,9 +7,15 @@ use App\Http\Controllers\Controller;
 
 class Filters extends Controller {
     public function index() {
+        $filters = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
+        $f = [];
+        foreach($filters as $filter) {
+            $f[] = $filter['id'];
+        }
+
         return view('admin.filters.index', [
             'filters' => json_decode(file_get_contents(public_path().'/json/dict.json')),
-            '_filters' => json_decode(file_get_contents(public_path().'/json/_dict.json'), true),
+            '_filters' => $f,
             'menuItem' => 'filters'
         ]);
     }

@@ -23,15 +23,19 @@ class ButtonsViber {
         $this->btnSize = $viewButtons->size_text;
     }
 
-    private function button($columns, $rows, $actionBody, $text, $silent = "false") {
+    private function button($columns, $rows, $actionBody, $text, $custom = [], $silent = "false") {
+        $btnBg = isset($custom['btnBg']) ? $custom['btnBg'] : $this->btnBg;
+        $fontColor = isset($custom['fontColor']) ? $custom['fontColor'] : $this->fontColor;
+        $btnSize = isset($custom['btnSize']) ? $custom['btnSize'] : $this->btnSize;
+
         return [
             'Columns' => $columns,
             'Rows' => $rows,
             'ActionType' => 'reply',
             'ActionBody' => $actionBody,
-            'BgColor' => $this->btnBg,
+            'BgColor' => $btnBg,
             'Silent' => $silent,
-            'Text' => '<font color="'.$this->fontColor.'" size="'.$this->btnSize.'">'.$text.'</font>',
+            'Text' => '<font color="'.$fontColor.'" size="'.$btnSize.'">'.$text.'</font>',
             'TextSize' => 'large',
             'TextVAlign' => 'middle',
 			'TextHAlign' => 'center',
@@ -112,28 +116,49 @@ class ButtonsViber {
     }
 
     public function filters($page = 1) {
-        $countButtons = 41;
-        $filtersAll = json_decode(file_get_contents(public_path()."/json/dict.json"), true);
+        $countButtons = 6;
+        $filtersAll = json_decode(file_get_contents(public_path()."/json/_dict.json"), true);
         $filters = array_chunk($filtersAll, $countButtons);
+
         $buttons = [];
-        foreach($filters[$page-1] as $id => $filter) {
-            $buttons[] = $this->button(6, 1, 'apply_filter__'.$id, $filter['description']);
+        foreach($filters[$page-1] as $filter) {
+            $buttons[] = $this->button_img(
+                6,
+                6,
+                'reply',
+                'apply_filter__'.$filter['id'],
+                $filter['image_link']
+            );
+            $buttons[] = $this->button(
+                6,
+                1,
+                'apply_filter__'.$filter['id'],
+                '{apply}',
+                [
+                    'btnBg' => '#ff7e3e',
+                    'fontColor' => '#ffffff',
+                    'btnSize' => '20'
+                ]
+            );
         }
 
-        $nextPage = $page+1;
-        $prevPage = $page-1;
-
-        if($page == 1) {
-            $buttons[] = $this->button(6, 1, 'filters__'.$nextPage, '{next}');
-        }
-        elseif($page == ceil(count($filtersAll) / $countButtons)) {
-            $buttons[] = $this->button(6, 1, 'filters__'.$prevPage, '{prev}');
-        }
-        else {
-            $buttons[] = $this->button(3, 1, 'filters__'.$prevPage, '{prev}');
-            $buttons[] = $this->button(3, 1, 'filters__'.$nextPage, '{next}');
-        }
         return $buttons;
+    }
+
+    public function moreBack($page = 1) {
+        $countButtons = 6;
+        $nextPage = $page+1;
+        $count = count(json_decode(file_get_contents(public_path()."/json/_dict.json"), true));
+
+        if($count > $countButtons) {
+            if(ceil($count / $countButtons) > $page) {
+                return [
+                    $this->button(6, 1, 'filters__' . $nextPage, '{more}'),
+                    $this->button(6, 1, 'back', '{back}')
+                ];
+            }
+        }
+        return $this->back();
     }
 
     public function contacts() {

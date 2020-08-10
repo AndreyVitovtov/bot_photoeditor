@@ -73,6 +73,9 @@ return [
 
     'log' => 'Last mailing log',
 
+    'filters' => 'Filters',
+    'filters_save' => 'Save',
+
     'languages_add' => 'Add language',
     'languages_list' => 'List of languages',
     'languages_name' => 'Name',

@@ -35,7 +35,7 @@ class RequestHandler extends BaseRequestHandler {
             $this->messenger = "Facebook";
         }
         else {
-            $this->messenger = "Viber";
+            $this->messenger = "Telegram";
         }
 
         define("MESSENGER", $this->messenger);
@@ -212,9 +212,10 @@ class RequestHandler extends BaseRequestHandler {
                 $photo = $this->getFilePath();
 
                 $res = $this->send('{select_filter}', [
-                    'inlineButtons' => InlineButtons::filters(),
-
+                    'buttons' => $this->buttons()->moreBack()
                 ]);
+
+                $this->sendFiltersTelegram();
 
                 $this->setInteraction('', [
                     'photo' => $photo,
@@ -248,7 +249,7 @@ class RequestHandler extends BaseRequestHandler {
 
                 $this->sendCarusel([
                     'richMedia' => $this->buttons()->filters(),
-                   'buttons' => $this->buttons()->back()
+                   'buttons' => $this->buttons()->moreBack()
                 ]);
 
                 $this->setInteraction('', [
@@ -256,8 +257,20 @@ class RequestHandler extends BaseRequestHandler {
                 ]);
             }
         }
-        elseif(MESSENGER == "Facebook") {
+    }
 
+    private function sendFiltersTelegram($page = 0) {
+        $filtersAll = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
+        $filters = array_chunk($filtersAll, 5);
+        foreach ($filters[$page] as $filter) {
+            $button = [[
+                "text" => '{apply}',
+                "callback_data" => 'apply_filter__'.$filter['id']
+            ]];
+
+            $this->sendPhoto($filter['image_link'], '', [
+                'inlineButtons' => [$button]
+            ]);
         }
     }
 
@@ -288,12 +301,13 @@ class RequestHandler extends BaseRequestHandler {
                 $this->sendPhoto($res);
 
                 $res = $this->send('{select_filter}', [
-                    'inlineButtons' => InlineButtons::filters()
+                    'buttons' => $this->buttons()->moreBack()
                 ]);
 
+                $this->sendFiltersTelegram();
+
                 $this->setInteraction('', [
-                    'photo' => $params->photo,
-                    'messageId' => $this->getIdSendMessage($res)
+                    'photo' => $params->photo
                 ]);
             }
             elseif(MESSENGER == "Viber") {
@@ -303,7 +317,7 @@ class RequestHandler extends BaseRequestHandler {
 
                 $this->sendCarusel([
                     'richMedia' => $this->buttons()->filters(),
-                    'buttons' => $this->buttons()->back()
+                    'buttons' => $this->buttons()->moreBack()
                 ]);
             }
         }
@@ -314,18 +328,33 @@ class RequestHandler extends BaseRequestHandler {
         }
     }
 
-    public function filters($page) {
-        $params = json_decode($this->getInteraction()['params']);
+    public function more() {
+        $params = json_decode($this->getInteraction()['params'], true);
 
+//        $params = json_decode($this->getInteraction()['params']);
+        if(!isset($params['page'])) {
+            $page = 1;
+        }
+        else {
+            $page = $params['page'] + 1;
+        }
+        $this->filters($page);
+
+        $params['page'] = $page;
+        $this->setInteraction('', $params);
+    }
+
+    public function filters($page) {
         if(MESSENGER == "Telegram") {
-            if(isset($params->messageId)) {
-                $this->editMessage($params->messageId, '{select_filter}', InlineButtons::filters($page));
-            }
+            $this->send('{select_filter}', [
+                'buttons' => $this->buttons()->moreBack($page)
+            ]);
+            $this->sendFiltersTelegram($page);
         }
         elseif(MESSENGER == "Viber") {
             $this->sendCarusel([
                 'richMedia' => $this->buttons()->filters($page),
-                'buttons' => $this->buttons()->back()
+                'buttons' => $this->buttons()->moreBack($page)
             ]);
         }
     }

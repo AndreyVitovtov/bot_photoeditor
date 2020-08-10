@@ -74,6 +74,9 @@ return [
 
     'log' => 'Лог последней рассылки',
 
+    'filters' => 'Фильтры',
+    'filters_save' => 'Сохранить',
+
     'languages_add' => 'Добавить язык',
     'languages_list' => 'Список языков',
     'languages_name' => 'Название',

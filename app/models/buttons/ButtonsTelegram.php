@@ -33,4 +33,20 @@ class ButtonsTelegram {
             ["{back}"]
         ];
     }
+
+    public function moreBack($page = 1) {
+        $countButtons = 6;
+        $nextPage = $page+1;
+        $count = count(json_decode(file_get_contents(public_path()."/json/_dict.json"), true));
+
+        if($count > $countButtons) {
+            if(ceil($count / $countButtons) > $page) {
+                return [
+                    ["{more}"],
+                    ["{back}"]
+                ];
+            }
+        }
+        return $this->back();
+    }
 }
