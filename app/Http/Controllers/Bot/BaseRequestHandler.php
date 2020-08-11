@@ -63,7 +63,7 @@
         public function callMethodIfExists(): void {
             $nameCommand = $this->getMethodName();
             if($nameCommand == null) return;
-            if(substr($nameCommand, 0, 4) == "http") return;
+            if(substr($nameCommand, 0, 4) == "http" || substr($nameCommand, 0, 5) == "viber") return;
 
             if(method_exists($this, $nameCommand)) {
                 try {

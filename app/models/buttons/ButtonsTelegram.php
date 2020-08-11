@@ -49,4 +49,11 @@ class ButtonsTelegram {
         }
         return $this->back();
     }
+
+    public function processAnotherPhoto() {
+        return [
+            ["{process_another_photo}"],
+            ["{back}"]
+        ];
+    }
 }

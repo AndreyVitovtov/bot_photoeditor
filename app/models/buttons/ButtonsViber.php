@@ -161,6 +161,14 @@ class ButtonsViber {
         return $this->back();
     }
 
+    public function processAnotherPhoto() {
+        return [
+            $this->button_url(6, 1, 'viber://forward?text=viber://pa?chatURI='.NAME_VIBER_BOT, 'Поделиться'),
+            $this->button(6, 1, 'process_another_photo', '{process_another_photo}'),
+            $this->button(6, 1, 'back', '{back}')
+        ];
+    }
+
     public function contacts() {
         return [
             $this->button(6, 1, 'general', '{contacts_general}'),

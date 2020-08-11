@@ -298,27 +298,29 @@ class RequestHandler extends BaseRequestHandler {
 
         if(substr($res, 0, 4) == "http") {
             if(MESSENGER == "Telegram") {
-                $this->sendPhoto($res);
-
-                $res = $this->send('{select_filter}', [
-                    'buttons' => $this->buttons()->moreBack()
+                $this->sendPhoto($res, '', [
+                    'buttons' => $this->buttons()->processAnotherPhoto()
                 ]);
 
-                $this->sendFiltersTelegram();
-
-                $this->setInteraction('', [
-                    'photo' => $params->photo
-                ]);
+//                $res = $this->send('{select_filter}', [
+//                    'buttons' => $this->buttons()->moreBack()
+//                ]);
+//
+//                $this->sendFiltersTelegram();
+//
+//                $this->setInteraction('', [
+//                    'photo' => $params->photo
+//                ]);
             }
             elseif(MESSENGER == "Viber") {
                 $this->sendImage($res, null, [
-                    'buttons' => $this->buttons()->back()
+                    'buttons' => $this->buttons()->processAnotherPhoto()
                 ]);
 
-                $this->sendCarusel([
-                    'richMedia' => $this->buttons()->filters(),
-                    'buttons' => $this->buttons()->moreBack()
-                ]);
+//                $this->sendCarusel([
+//                    'richMedia' => $this->buttons()->filters(),
+//                    'buttons' => $this->buttons()->moreBack()
+//                ]);
             }
         }
         else {
@@ -326,6 +328,10 @@ class RequestHandler extends BaseRequestHandler {
                 'buttons' => $this->buttons()->back()
             ]);
         }
+    }
+
+    public function process_another_photo() {
+        $this->process_photo();
     }
 
     public function more() {
