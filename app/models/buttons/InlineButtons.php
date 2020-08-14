@@ -108,6 +108,70 @@ class InlineButtons {
     }
 
     public static function languages() {
+        $buttons = [];
+        $buttons[] = [[
+            'text' => DEFAULT_LANGUAGE,
+            'callback_data' => 'lang__0'
+        ]];
+        $languages = Language::all();
+        foreach($languages as $l) {
+            $buttons[] = [[
+                'text' => base64_decode($l->emoji).' '.$l->name,
+                'callback_data' => 'lang__'.$l->code
+            ]];
+        }
+        return $buttons;
+    }
+
+    public static function share($url) {
+        return [[[
+            "text" => "{to_share}",
+            "url" => "https://telegram.me/share/url?url=$url"
+        ]]];
+    }
+
+    public static function paidAccess($userId) {
+        return [[[
+            'text' => '{payment}',
+            'url' => url("/payment/method/telegram/$userId/".PAID_ACCESS_COST."/paid_access")
+        ]]];
+    }
+
+    public static function FiltersTelegram(int $id, int $count) {
+        $prev = $id-1;
+        $next = $id+1;
+        if($id != 0) {
+            if($id == $count-1) {
+                return [[[
+                    'text' => '{apply}',
+                    'callback_data' => 'apply_filter__'.$id
+                ]], [[
+                    'text' => '{prev}',
+                    'callback_data' => 'updateFiltersTelegram__'.$prev
+                ]]];
+            }
+            else {
+                return [[[
+                    'text' => '{apply}',
+                    'callback_data' => 'apply_filter__'.$id
+                ]], [[
+                    'text' => '{prev}',
+                    'callback_data' => 'updateFiltersTelegram__'.$prev
+                ],[
+                    'text' => '{next}',
+                    'callback_data' => 'updateFiltersTelegram__'.$next
+                ]]];
+            }
+        }
+        else {
+            return [[[
+                        'text' => '{apply}',
+                        'callback_data' => 'apply_filter__'.$id
+                    ]], [[
+                        'text' => '{next}',
+                        'callback_data' => 'updateFiltersTelegram__'.$next
+                    ]]];
+        }
 
     }
 

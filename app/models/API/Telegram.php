@@ -220,7 +220,7 @@ class Telegram {
         return "https://api.telegram.org/file/bot$this->token/$filePath";
     }
 
-    private function makeRequest($method, $data = []) {
+    private function makeRequest($method, $data) {
         $url = "https://api.telegram.org/bot".$this->token . "/" . $method;
         $data_string = json_encode($data);
         $ch = curl_init($url);
@@ -254,6 +254,28 @@ class Telegram {
             ];
         }
         return $this->makeRequest('editMessageText', $data);
+    }
+
+    public function editMessageMedia($chat, $messageId, $media, $caption = '', $inlineKeyboard = null) {
+        $data = [
+            'chat_id' => $chat,
+            'message_id' => $messageId,
+            'media' => [
+                'type' => 'photo',
+		        'media' => $media
+            ],
+            'caption' => $caption,
+            'parse_mode' => "Markdown"
+        ];
+
+        if($inlineKeyboard != null) {
+            $data['reply_markup'] = [
+                'inline_keyboard' => $inlineKeyboard,
+                'resize_keyboard' => false
+            ];
+        }
+
+        return $this->makeRequest('editMessageMedia', $data);
     }
 
     public function sendDocument($chat, $document, $caption = "", $params = []) {

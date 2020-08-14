@@ -139,11 +139,11 @@
                         'menu' => 'contactsgeneral',
                         'url' => '/admin/contacts/general'
                     ],
-{{--                    [--}}
-{{--                       'name' => 'contacts_access',--}}
-{{--                       'menu' => 'contactsaccess',--}}
-{{--                       'url' => '/admin/contacts/access'--}}
-{{--                    ],--}}
+                    [
+                       'name' => 'contacts_access',
+                       'menu' => 'contactsaccess',
+                       'url' => '/admin/contacts/access'
+                    ],
                     [
                        'name' => 'contacts_advertising',
                        'menu' => 'contactsadvertising',

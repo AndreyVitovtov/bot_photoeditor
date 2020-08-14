@@ -84,7 +84,7 @@ class ButtonsViber {
                     $this->button(6, 1, 'process_photo', '{process_photo}'),
                     $this->button(6, 1, 'paid_access', '{paid_access}'),
                     $this->button(6, 1, 'contacts', '{contacts}'),
-                    $this->button(6, 1, 'group', '{group}'),
+                    $this->button_url(6, 1, 'viber://pa?chatURI='.GROUP_VIBER, '{group}'),
                     $this->button(6, 1, 'languages', '{languages}'),
                 ];
             }
@@ -92,7 +92,7 @@ class ButtonsViber {
                 return [
                     $this->button(6, 1, 'process_photo', '{process_photo}'),
                     $this->button(6, 1, 'contacts', '{contacts}'),
-                    $this->button(6, 1, 'group', '{group}'),
+                    $this->button_url(6, 1, 'viber://pa?chatURI='.GROUP_VIBER, '{group}'),
                     $this->button(6, 1, 'languages', '{languages}'),
                 ];
             }
@@ -103,7 +103,7 @@ class ButtonsViber {
                 $this->button(6, 1, 'free_access', '{free_access}'),
                 $this->button(6, 1, 'paid_access', '{paid_access}'),
                 $this->button(6, 1, 'contacts', '{contacts}'),
-                $this->button(6, 1, 'group', '{group}'),
+                $this->button_url(6, 1, 'viber://pa?chatURI='.GROUP_VIBER, '{group}'),
                 $this->button(6, 1, 'languages', '{languages}'),
             ];
         }
@@ -163,7 +163,7 @@ class ButtonsViber {
 
     public function processAnotherPhoto() {
         return [
-            $this->button_url(6, 1, 'viber://forward?text=viber://pa?chatURI='.NAME_VIBER_BOT, 'Поделиться'),
+            $this->button_url(6, 1, 'viber://forward?text=viber://pa?chatURI='.NAME_VIBER_BOT, '{to_share}'),
             $this->button(6, 1, 'process_another_photo', '{process_another_photo}'),
             $this->button(6, 1, 'back', '{back}')
         ];
@@ -178,8 +178,30 @@ class ButtonsViber {
         ];
     }
 
-    public function languages() {
+    public function languages($languages) {
+        $buttons = [];
+        $buttons[] = $this->button(
+            6,
+            1,
+            'lang__0',
+            DEFAULT_LANGUAGES
+        );
+        foreach($languages as $l) {
+            $buttons[] = $this->button(
+                6,
+                1,
+                'lang__'.$l->code,
+                base64_decode($l->emoji).' '.$l->name
+            );
+        }
+        return $buttons;
+    }
 
+    public function paidAccess($userId) {
+        return [
+            $this->button_url(6, 1, url("/payment/method/viber/$userId/".PAID_ACCESS_COST."/paid_access"), '{payment}'),
+            $this->button(6, 1, 'back', '{back}')
+        ];
     }
 
     private function pagesButtons($res, $method, $name = 'name', $page = '1') {

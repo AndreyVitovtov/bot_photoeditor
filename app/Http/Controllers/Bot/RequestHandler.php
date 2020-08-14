@@ -67,14 +67,14 @@ class RequestHandler extends BaseRequestHandler {
     public function index() {
         file_put_contents(public_path("json/request.json"), $this->getRequest());
 
-        if(MESSENGER == "Telegram") {
-            if(!$this->isUserSubscribedToChannel()) {
-                return $this->send("{subscribed_to_channel}", [
-                    'inlineButtons' => InlineButtons::SubscribedToChannel(),
-                    'hideKeyboard' => true
-                ]);
-            }
-        }
+//        if(MESSENGER == "Telegram") {
+//            if(!$this->isUserSubscribedToChannel()) {
+//                return $this->send("{subscribed_to_channel}", [
+//                    'inlineButtons' => InlineButtons::SubscribedToChannel(),
+//                    'hideKeyboard' => true
+//                ]);
+//            }
+//        }
 
         if($this->getType() == "started") {
             $this->setUserId();
@@ -259,19 +259,29 @@ class RequestHandler extends BaseRequestHandler {
         }
     }
 
-    private function sendFiltersTelegram($page = 0) {
+    public function updateFiltersTelegram($id) {
+        $params = $params = json_decode($this->getInteraction()['params']);
         $filtersAll = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
-        $filters = array_chunk($filtersAll, 5);
-        foreach ($filters[$page] as $filter) {
-            $button = [[
-                "text" => '{apply}',
-                "callback_data" => 'apply_filter__'.$filter['id']
-            ]];
+        echo $this->getBot()->editMessageMedia(
+            $this->getChat(),
+            $params->messageId,
+            $filtersAll[$id]['image_link'],
+            '',
+            InlineButtons::FiltersTelegram($id, count($filtersAll))
+        );
+    }
 
-            $this->sendPhoto($filter['image_link'], '', [
-                'inlineButtons' => [$button]
-            ]);
-        }
+    private function sendFiltersTelegram($id = 0) {
+        $filtersAll = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
+
+        $res = $this->sendPhoto($filtersAll[$id]['image_link'], '', [
+            'inlineButtons' => InlineButtons::FiltersTelegram($id, count($filtersAll))
+        ]);
+
+        $params = json_decode($this->getInteraction()['params'], true);
+        $params['messageId'] = $this->getIdSendMessage($res);
+
+        $this->setInteraction('', $params);
     }
 
     public function apply_filter($id) {
@@ -301,6 +311,11 @@ class RequestHandler extends BaseRequestHandler {
                 $this->sendPhoto($res, '', [
                     'buttons' => $this->buttons()->processAnotherPhoto()
                 ]);
+
+                $this->send('{share}', [
+                    'inlineButtons' => InlineButtons::share('https://t.me/'.NAME_TELEGRAM_BOT)
+                ]);
+
 
 //                $res = $this->send('{select_filter}', [
 //                    'buttons' => $this->buttons()->moreBack()
@@ -378,6 +393,19 @@ class RequestHandler extends BaseRequestHandler {
         elseif(MESSENGER == "Viber") {
             $this->send('viber://pa?chatURI='.NAME_VIBER_BOT.'&context='.$this->getChat(), [
                 'buttons' => $this->buttons()->main_menu($this->getUserId())
+            ]);
+        }
+    }
+
+    public function paid_access() {
+        if(MESSENGER == "Viber") {
+            $this->send('{paid_access}', [
+                'buttons' => $this->buttons()->paidAccess($this->getUserId())
+            ]);
+        }
+        elseif(MESSENGER == "Telegram") {
+            $this->send('{paid_access}', [
+                'inlineButtons' => InlineButtons::paidAccess($this->getUserId())
             ]);
         }
     }
@@ -530,7 +558,7 @@ class RequestHandler extends BaseRequestHandler {
             $user->access_free = '1';
             $user->save();
 
-            $this->sendTo($user->chat, "{got_free_access}", [
+            $this->sendTo($user->chat, "{free_access_provided}", [
                 'buttons' => $this->buttons()->main_menu($id)
             ]);
         }
