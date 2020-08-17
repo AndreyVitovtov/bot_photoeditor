@@ -17,6 +17,7 @@ return [
     'statistics_messages' => 'Количество сообщений',
     'statistics_incoming' => 'Входящие',
     'statistics_outgoing' => 'Исходяшие',
+    'statistics_count_process_photo' => 'Количество обработаных фото, за последние 10 дней',
 
     'users' => 'Поиск пользователей',
     'users_search_label' => 'Имя пользователя или ID Chat',

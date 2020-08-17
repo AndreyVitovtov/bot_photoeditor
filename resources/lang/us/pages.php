@@ -17,6 +17,7 @@ return [
     'statistics_messages' => 'Number of messages',
     'statistics_incoming' => 'Incoming',
     'statistics_outgoing' => 'Outgoing',
+    'statistics_count_process_photo' => 'Number of processed photos, for the last 10 days',
 
     'users' => 'User search',
     'users_search_label' => 'Username or ID Chat',

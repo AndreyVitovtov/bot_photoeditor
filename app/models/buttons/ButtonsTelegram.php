@@ -9,16 +9,37 @@ use App\models\BotUsers;
 class ButtonsTelegram {
 
     public static function main_menu($userId) {
-//        $user = BotUsers::find($userId);
+        $user = BotUsers::find($userId);
 
-        return [
-            ["{process_photo}"],
-            ["{free_access}"],
-            ["{paid_access}"],
-            ["{contacts}"],
-            ["{group}"],
-            ["{languages}"]
-        ];
+        if($user->access == '1') {
+            if($user->access_free == '1') {
+                return [
+                    ["{process_photo}"],
+                    ["{paid_access}"],
+                    ["{contacts}"],
+                    ["{group}"],
+                    ["{languages}"]
+                ];
+            }
+            else {
+                return [
+                    ["{process_photo}"],
+                    ["{contacts}"],
+                    ["{group}"],
+                    ["{languages}"]
+                ];
+            }
+        }
+        else {
+            return [
+                ["{process_photo}"],
+                ["{free_access}"],
+                ["{paid_access}"],
+                ["{contacts}"],
+                ["{group}"],
+                ["{languages}"]
+            ];
+        }
     }
 
     public static function start()

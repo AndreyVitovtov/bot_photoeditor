@@ -260,22 +260,54 @@ class Telegram {
         $data = [
             'chat_id' => $chat,
             'message_id' => $messageId,
-            'media' => [
+            'media' => json_encode([
                 'type' => 'photo',
-		        'media' => $media
-            ],
+                'media' => $media
+            ]),
             'caption' => $caption,
             'parse_mode' => "Markdown"
         ];
 
         if($inlineKeyboard != null) {
-            $data['reply_markup'] = [
+            $data['reply_markup'] = json_encode([
                 'inline_keyboard' => $inlineKeyboard,
                 'resize_keyboard' => false
-            ];
+            ]);
         }
 
-        return $this->makeRequest('editMessageMedia', $data);
+        $bot_url    = "https://api.telegram.org/bot".$this->token."/editMessageMedia";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Content-Type: multipart/form-data"
+        ]);
+        curl_setopt($ch, CURLOPT_URL, $bot_url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+
+
+//
+//        $data = [
+//            'chat_id' => $chat,
+//            'message_id' => $messageId,
+//            'media' => [
+//                'type' => 'photo',
+//		        'media' => $media
+//            ],
+//            'caption' => $caption,
+//            'parse_mode' => "Markdown"
+//        ];
+//
+////        if($inlineKeyboard != null) {
+////            $data['reply_markup'] = [
+////                'inline_keyboard' => $inlineKeyboard,
+////                'resize_keyboard' => false
+////            ];
+////        }
+//dd($data);
+//        return $this->makeRequest('editMessageMedia', $data);
     }
 
     public function sendDocument($chat, $document, $caption = "", $params = []) {

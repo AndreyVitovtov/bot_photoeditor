@@ -211,15 +211,15 @@ class RequestHandler extends BaseRequestHandler {
             if($this->getType() == 'photo') {
                 $photo = $this->getFilePath();
 
-                $res = $this->send('{select_filter}', [
-                    'buttons' => $this->buttons()->moreBack()
+                $this->send('{select_filter}', [
+                    'buttons' => $this->buttons()->back()
                 ]);
 
-                $this->sendFiltersTelegram();
+                $messageId = $this->sendFiltersTelegram(0, $photo);
 
                 $this->setInteraction('', [
                     'photo' => $photo,
-                    'messageId' => $this->getIdSendMessage($res)
+                    'messageId' => $messageId
                 ]);
             }
             else {
@@ -262,8 +262,7 @@ class RequestHandler extends BaseRequestHandler {
     public function updateFiltersTelegram($id) {
         $params = $params = json_decode($this->getInteraction()['params']);
         $filtersAll = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
-        echo $this->getBot()->editMessageMedia(
-            $this->getChat(),
+        $this->editMessageMedia(
             $params->messageId,
             $filtersAll[$id]['image_link'],
             '',
@@ -271,17 +270,19 @@ class RequestHandler extends BaseRequestHandler {
         );
     }
 
-    private function sendFiltersTelegram($id = 0) {
+    private function sendFiltersTelegram($id = 0, $photo = null) {
         $filtersAll = json_decode(file_get_contents(public_path().'/json/_dict.json'), true);
 
         $res = $this->sendPhoto($filtersAll[$id]['image_link'], '', [
             'inlineButtons' => InlineButtons::FiltersTelegram($id, count($filtersAll))
         ]);
 
-        $params = json_decode($this->getInteraction()['params'], true);
-        $params['messageId'] = $this->getIdSendMessage($res);
+        return $this->getIdSendMessage($res);
 
-        $this->setInteraction('', $params);
+//        $params = json_decode($this->getInteraction()['params'], true);
+//        $params['messageId'] = $this->getIdSendMessage($res);
+//
+//        $this->setInteraction('', $params);
     }
 
     public function apply_filter($id) {
@@ -523,7 +524,9 @@ class RequestHandler extends BaseRequestHandler {
                 }
             }
         }
-//        $this->delMessage();
+        elseif(MESSENGER == "Telegram") {
+            $this->delMessage();
+        }
         $this->delInteraction();
 
         $this->send("{main_menu}", [

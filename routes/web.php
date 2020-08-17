@@ -51,16 +51,11 @@ Route::group(['middleware' => 'auth', 'prefix'=>'admin'], function() {
     Route::get('/', "Admin\Statistics@index");
 
     Route::prefix('/mailing')->group(function () {
-        Route::get('/users', "Admin\Mailing@index");
-        Route::get('/chat/users', "Admin\Mailing@chatUsers");
+        Route::get('/', "Admin\Mailing@index");
         Route::post('/send', "Admin\Mailing@send");
-        Route::post('/chat/send', "Admin\Mailing@sendChat")->name('mailing-send-chat');
         Route::post('/cancel', "Admin\Mailing@cancel");
-        Route::post('/chat/cancel', "Admin\Mailing@cancelChat");
         Route::get('/analize', "Admin\Mailing@analize");
-        Route::get('/chat/analize', "Admin\Mailing@analizeChat");
         Route::get('/log', "Admin\Mailing@log");
-        Route::get('/chat/log', "Admin\Mailing@logChat");
         Route::post('/mark-inactive-users', "Admin\Mailing@markInactiveUsers");
     });
 

@@ -24,6 +24,7 @@
         texts.users_count = "@lang('pages.statistics_users_count')";
         texts.count_users_country = "@lang('pages.statistics_count_users')";
         texts.count_users_messengers = "@lang('pages.statistics_count_users_messengers')";
+        texts.count_process_photo = "@lang('pages.statistics_count_process_photo')";
 
 
         statistics.data = {!! json_encode($data) !!}
@@ -36,8 +37,8 @@
         statistics3.data = {!! json_encode($messengers) !!}
         console.log(statistics3);
 
-        statistics.data = {!! json_encode($data) !!}
-        console.log(statistics);
+        statistics4.data = {!! json_encode($countPhoto) !!}
+        console.log(statistics4);
         {{--statistics4.data = {!! json_encode($access) !!}--}}
         {{--    statistics4.title = "@lang('pages.statistics_access')";--}}
         {{--console.log(statistics4);--}}
@@ -47,7 +48,7 @@
         // по окончанию загрузки API визуализации.
         google.setOnLoadCallback(function() {
 
-            drawChart(statistics, statistics2, statistics3, texts);
+            drawChart(statistics, statistics2, statistics3, statistics4, texts);
         });
     </script>
 
@@ -57,7 +58,7 @@
     <div class="chart_statistics_2">
         <div id="chart_div_3"></div>
     </div>
-    <div class="chart_statistics_2 w100">
+    <div class="chart_statistics_2">
         <div id="chart_div"></div>
     </div>
     <div class="chart_statistics_2">

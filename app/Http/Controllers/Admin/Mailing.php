@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\DB;
 class Mailing extends Controller{
     public function index(Request $request) {
         $view = view('admin.mailing.mailing');
-        $view->menuItem = "mailingusers";
+        $view->menuItem = "mailing";
 
         if(file_exists(public_path()."/json/mailing_task.json")) {
             $task = file_get_contents(public_path()."/json/mailing_task.json");
@@ -48,7 +48,7 @@ class Mailing extends Controller{
     public function send(Request $request) {
         $params = $request->input();
         if(empty($params['text'])) {
-            return redirect()->to("/admin/mailing/users");
+            return redirect()->to("/admin/mailing");
         }
         else {
             $task = [];
@@ -72,39 +72,55 @@ class Mailing extends Controller{
 
             $count = 0;
 
-            if($params['chat_holders'] == "all") {
+            if($params['country'] == "%") {
+                $country = "(country LIKE '%' OR country IS NULL)";
+            }
+            else {
+                $country = "country LIKE '".$params['country']."'";
+            }
+
+            if($params['access'] == "all") {
                 $db = DB::select("
-                    SELECT COUNT(*) AS count 
-                        FROM users 
-                        WHERE messenger LIKE '".$params['messenger']."' 
-                            AND country LIKE '".$params['country']."'"
+                    SELECT COUNT(*) AS count
+                        FROM users
+                        WHERE messenger LIKE '".$params['messenger']."'
+                            AND {$country}"
                 );
             }
-            elseif($params['chat_holders'] == "yes") {
+            elseif($params['access'] == "paid") {
                 $db = DB::select("
                     SELECT COUNT(DISTINCT(u.id)) AS count
                         FROM users u
-                        JOIN chats c ON c.users_id = u.id
                         WHERE u.messenger LIKE '".$params['messenger']."'
-                            AND u.country LIKE '".$params['country']."'"
+                            AND {$country}
+                            AND u.access = '1'
+                            AND u.access_free = '0'"
                 );
             }
-            elseif($params['chat_holders'] == "no") {
+            elseif($params['access'] == "free") {
                 $db = DB::select("
-                    SELECT COUNT(DISTINCT(u.id)) AS count 
-                    FROM users u
-                    WHERE u.id NOT IN (
-                        SELECT id FROM chats
-                    ) AND u.messenger LIKE '".$params['messenger']."'
-                      AND u.country LIKE '".$params['country']."'"
+                    SELECT COUNT(DISTINCT(u.id)) AS count
+                        FROM users u
+                        WHERE u.messenger LIKE '".$params['messenger']."'
+                            AND {$country}
+                            AND u.access = '1'
+                            AND u.access_free = '1'"
                 );
-
+            }
+            elseif($params['access'] == "no") {
+                $db = DB::select("
+                    SELECT COUNT(DISTINCT(u.id)) AS count
+                        FROM users u
+                        WHERE u.messenger LIKE '".$params['messenger']."'
+                            AND {$country}
+                            AND u.access = '0'"
+                );
             }
 
             $count = $db[0]->count;
 
             if($count == 0) {
-                return redirect()->to("/admin/mailing/users");
+                return redirect()->to("/admin/mailing");
             }
 
             $task['count'] = $count;
@@ -113,23 +129,23 @@ class Mailing extends Controller{
             $task['performed'] = "false";
             $task['country'] = $params['country'];
             $task['messenger'] = $params['messenger'];
-            $task['chat_holders'] = $params['chat_holders'];
+            $task['access'] = $params['access'];
 
             file_put_contents(public_path()."/json/mailing_task.json", json_encode($task));
             file_put_contents(public_path()."/txt/log.txt", "");
 
-            return redirect()->to("/admin/mailing/users");
+            return redirect()->to("/admin/mailing");
         }
     }
 
     public function cancel() {
         unlink(public_path()."/json/mailing_task.json");
-        return redirect()->to("/admin/mailing/users");
+        return redirect()->to("/admin/mailing");
     }
 
     public function analize() {
         $view = view('admin.mailing.mailing-analize');
-        $view->menuItem = "mailingusers";
+        $view->menuItem = "mailing";
 
         $all = 0;
         $true = 0;
@@ -196,7 +212,7 @@ class Mailing extends Controller{
         }
         $view = view('admin.mailing.mailing-log');
         $view->log = $log;
-        $view->menuItem = "mailingusers";
+        $view->menuItem = "mailing";
         return $view;
     }
 

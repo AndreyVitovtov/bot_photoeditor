@@ -320,6 +320,11 @@
             return $this->getBot()->editMessageText($this->getChat(), $messageId, $message, $inlineKeyboard);
         }
 
+        public function editMessageMedia($messageId, $media, $caption = '', $inlineKeyboard = null, $n = []) {
+            $inlineKeyboard = $this->valueSubstitutionArray($inlineKeyboard, $n);
+            return $this->getBot()->editMessageMedia($this->getChat(), $messageId, $media, $caption, $inlineKeyboard);
+        }
+
         public function startRef($chat) {
             try {
                 $referral = $this->getUserId();

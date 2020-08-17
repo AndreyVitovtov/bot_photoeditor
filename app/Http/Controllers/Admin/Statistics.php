@@ -69,6 +69,20 @@ class Statistics extends Controller {
             'free' => $accessFree[0]->count
         ];
 
+        //Количество обработаных фотографий
+        $countPhoto = DB::select("SELECT date, COUNT(*) AS count FROM process_photos WHERE date > DATE_ADD(NOW(), INTERVAL -10 DAY) GROUP BY date");
+        $countPhoto = json_encode($countPhoto);
+
+        $countPhoto = json_decode($countPhoto, true);
+        $dataCP = [];
+        foreach($countPhoto as $cp) {
+            $dataCP[] = [
+                $cp['date'],
+                $cp['count']
+            ];
+        }
+        $view->countPhoto = $dataCP;
+
         return $view;
     }
 }

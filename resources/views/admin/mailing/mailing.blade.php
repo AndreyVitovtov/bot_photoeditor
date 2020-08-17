@@ -46,17 +46,20 @@
             </div>
             <br>
             <div>
-                <label>@lang('pages.mailing_chat_holders')</label>
+                <label>@lang('pages.mailing_access')</label>
             </div>
             <div>
-                <input type="radio" name="chat_holders" value="all" id="chat_holders_all" checked>
-                <label for="chat_holders_all">@lang('pages.mailing_all')</label>
+                <input type="radio" name="access" value="all" id="access_all" checked>
+                <label for="access_all">@lang('pages.mailing_all')</label>
 
-                <input type="radio" name="chat_holders" value="yes" id="chat_holders_yes">
-                <label for="chat_holders_yes">@lang('pages.mailing_yes')</label>
+                <input type="radio" name="access" value="paid" id="access_paid">
+                <label for="access_paid">@lang('pages.mailing_paid')</label>
 
-                <input type="radio" name="chat_holders" value="no" id="chat_holders_no">
-                <label for="chat_holders_no">@lang('pages.mailing_no')</label>
+                <input type="radio" name="access" value="free" id="access_free">
+                <label for="access_free">@lang('pages.mailing_free')</label>
+
+                <input type="radio" name="access" value="no" id="access_no">
+                <label for="access_no">@lang('pages.mailing_no')</label>
             </div>
             <div class="block_buttons">
                 <button class="button">@lang('pages.mailing_send')</button>
